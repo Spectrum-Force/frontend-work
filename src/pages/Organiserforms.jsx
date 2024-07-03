@@ -3,6 +3,7 @@
 const Organiserforms = () => {
   return (
     <div className="bg-red-500 bg-cover h-100vh">
+      <h1 className="text-white font-bold text-center">Create a New Event</h1>
      <form className=" flex flex-col max-w-md mx-auto">
           <div className="mb-8">
             <label
@@ -13,9 +14,7 @@ const Organiserforms = () => {
             </label>
             <input
               type="text"
-              id="name"
-              name="name"
-              className="h-14 w-full px-3 py-2 border-[#00B4BF] border-2 rounded-lg "
+              className="h-10 w-full px-2 py-1 border-[#00B4BF] border-2 rounded-lg "
             />
           </div>
           <div className="mb-8">
@@ -27,9 +26,7 @@ const Organiserforms = () => {
             </label>
             <input
               type="text"
-              id="name"
-              name="name"
-              className=" h-14 w-full px-3 py-2 border-[#00B4BF] border-2 rounded-lg"
+              className=" h-10 w-full px-2 py-1 border-[#00B4BF] border-2 rounded-lg"
             />
           </div>
           <div className="mb-8">
@@ -41,9 +38,7 @@ const Organiserforms = () => {
             </label>
             <input
               type="file"
-              id="name"
-              name="name"
-              className="h-14 w-full px-3 py-2 border-[#00B4BF] border-2 rounded-lg"
+              className="h-10 w-full px-2 py-1 border-[#00B4BF] border-2 rounded-lg"
             />
           </div>
           <div className="mb-8">
@@ -55,9 +50,7 @@ const Organiserforms = () => {
             </label>
             <input
               type="text"
-              id="name"
-              name="name"
-              className="h-14 w-full px-3 py-2 border-[#00B4BF] border-2 rounded-lg"
+              className="h-10 w-full px-2 py-1 border-[#00B4BF] border-2 rounded-lg"
             />
           </div>
           <div className="mb-8">
@@ -70,19 +63,12 @@ const Organiserforms = () => {
             <input
               aria-label="Date"
               type="date"
-              name="name"
-              className="h-14 w-full px-3 py-2 border-[#00B4BF] border-2 rounded-lg"
+              className="h-10 w-full px-2 py-1 border-[#00B4BF] border-2 rounded-lg"
             />
           </div>
           <div className="mb-8">
-            <button>
-            <input
-              type="submit"
-              id="onClick"
-              className="h-14 w-full px-3 py-2 border-[#00B4BF] border-2 rounded-lg"
-            />
-            </button>
-            
+            <button type="submit" className="h-10 w-40 px-3 py-2 border-[#00B4BF] border-2 rounded-3xl"
+            >Create Event</button>
           </div>
         </form>
       
