@@ -40,7 +40,7 @@ const Organiserforms = () => {
               IMAGE
             </label>
             <input
-              type="text"
+              type="file"
               id="name"
               name="name"
               className="h-14 w-full px-3 py-2 border-[#00B4BF] border-2 rounded-lg"
