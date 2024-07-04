@@ -4,4 +4,5 @@ import symphony from "../images/symphony.jpg"
 import sing from "../images/sing.jpg"
 import mask from "../images/mask.jpg"
 import color from "../images/color.jpg"
-export {brassynight,electric,symphony,sing,mask,color}
+
+export {brassynight,electric,symphony,sing,mask,color,}

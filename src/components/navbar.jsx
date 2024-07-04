@@ -9,7 +9,7 @@ const Navbar = () => {
       <span>Logo</span>
       <div className="flex gap-x-16 justify-center flex-grow">
         {K.NAVLINKS.map((item, index) => (
-          <Link key={index} to={item.path} className="uppercase text-medium font-semibold">{item.name}</Link>
+          <Link key={index} to={item.path} className="uppercase text-medium font-semibold ">{item.name}</Link>
         ))}
       </div>
     </div>
