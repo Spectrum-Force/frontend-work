@@ -25,7 +25,7 @@ const RecordCards = (props) => {
 						</div>
 						<div>
 							<h3>Time</h3>
-							<p>{new Date(props.time).toLocaleTimeString()}</p>
+							<p>{new Date(props.time).toLocaleTimeString('en-US')}</p>
 						</div>
 					</div>
 				</div>

@@ -25,11 +25,11 @@ const Eventpage = () => {
 
   const recordCards = events.map(event=> (
     <RecordCards
-      id={event.id}
+      key={event.id}
       title={event.eventName}
       date={event.date}
       price={event.price}
-      flyer={event.flyer}
+      flyer={`https://savefiles.org/secure/uploads/${event.flyer}?shareable_link=251`}
     />
   )) 
   return (
