@@ -29,6 +29,7 @@ const Eventpage = () => {
       title={event.eventName}
       date={event.date}
       price={event.price}
+      flyer={event.flyer}
     />
   )) 
   return (
