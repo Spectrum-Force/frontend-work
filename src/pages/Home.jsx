@@ -1,5 +1,6 @@
-import { brassynight, color, electric, mask, sing, symphony } from "../assets/images"
-import heroimage1 from "../assets/images/heroimage1.jpg"
+import { Search } from "lucide-react"
+import { background,brassynight, color, electric, mask, sing, symphony } from "../assets/images"
+// import heroimage1 from "../assets/images/heroimage1.jpg"
 
 
 
@@ -8,34 +9,39 @@ import heroimage1 from "../assets/images/heroimage1.jpg"
 
 const Home = () => {
   return (
-    <div className="w-screen  object-contain  ">
-      <div className="relative ">
-        <img src={heroimage1} alt="hero-image" className="object-contain w-full h-full" />
+    <div className=" object-contain  ">
+      <div className="relative">
+<video autoPlay loop src={background} className="object-contain w-full h-full"></video>
         <div className="h-full w-full absolute bottom-0  bg-[#E1480D]/80 items-center justify-center flex flex-col ">
-         <h className=" font-bold text-4xl text-white">Make Your Dream Come True</h>
-        <p className="text-white text-lg mt-5 font-normal ">Meet your favorite artists, sport teams and parties</p>
-        <button>
-          <h1></h1>
-          
-        </button>
-        
+          <h className=" font-bold text-4xl text-white">Make Your Dream Come True</h>
+          <p className="text-white text-lg mt-5 font-normal ">Meet your favorite artists, sport teams and parties</p>
+
+          <div className="flex items-center mt-16">
+            <input type="text" className="relative flex-grow  bg-[#d6d1cf] outline-transparent 
+                         border-none p-3 px-12 w-[400px] rounded-2xl mr-10"
+              placeholder="Search Artist,Team, or Venue" />
+            <Search className="absolute text-gray-500 ml-[340px]" />
+          </div>
+
         </div>
-        
+
       </div>
 
       <div>
         <div className="flex space-x-24 place-items-center place-content-center ">
           <div className=" h-40" >
             <h2 className="uppercase font-bold text-[#373737] mt-8">upcoming event</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt<br/> laoreet dolore magna aliquam </p></div>
-          <button className="border-2 border-[#FFA569] rounded-lg h-10 hover:bg-[#FF6600]">See all Upcoming Events</button>
+            <p>LJoin us for festivals that celebrate culture, music, and community<br /> Our festivals are vibrant, multi-day events filled with diverse performances </p></div>
+          <button className="border-2 border-[#FFA569] rounded-2xl w-[200px] h-10 hover:bg-[#FF6600]">See all Upcoming Events</button>
         </div>
         <div className="grid grid-cols-3 gap-3">
-          <div>
+          <div className="">
             <img src={brassynight} alt="brassy" />
           </div>
-          <div>
+          <div className=" ">
+
             <img src={electric} alt="electric" />
+            <p className="text-white">hhjrjkre</p>
           </div>
           <div className="col-span-1">
             <img src={symphony} alt="symphony" className="w-full h-[300px] object-cover" />
@@ -77,8 +83,18 @@ const Home = () => {
           </div>
         </div>
       </div>
-      
-      <div>stay up</div>
+      <div className=" h-12"></div>
+      <div className="h-80 items-center ">
+        <div className="object-contain bg-cover bg-center h-80 bg-[url('./assets/images/stay.jpg')]">
+          <div className="h-80 bg-[#FC7216]/80 flex flex-col justify-center items-center">
+            <h2 className="text-white font-bold text-2xl">Stay Up to date With Your Favorite Events!</h2>
+            <p className="text-white mt-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh<br />Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</p>
+            <button className=" text-white border-2 border-white rounded-2xl w-[200px] h-10 bg-[#FC7216]/80 hover:bg-orange-600 " > Create Event</button>
+          </div>
+
+        </div>
+      </div>
+      <div className="bg-[#4E4E4E] h-2"></div>
     </div>
   )
 }

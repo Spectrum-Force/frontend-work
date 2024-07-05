@@ -5,6 +5,7 @@ import Eventpage from './pages/Eventpage'
 import Organiserforms from './pages/Organiserforms'
 import RootLayout from './Layouts/rootLayout'
 
+
 function App() {
   const router = createBrowserRouter([
     {
@@ -18,6 +19,7 @@ function App() {
         {
           path: "events",
           element: <Eventpage/>,
+          
         },
         {
           path: "add-event",

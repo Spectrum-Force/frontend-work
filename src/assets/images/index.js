@@ -4,5 +4,10 @@ import symphony from "../images/symphony.jpg"
 import sing from "../images/sing.jpg"
 import mask from "../images/mask.jpg"
 import color from "../images/color.jpg"
-
-export {brassynight,electric,symphony,sing,mask,color,}
+import facebook from "../images/facebook.png"
+import twitter from "../images/twitter.png"
+import link from "../images/link.png"
+import insta from "../images/insta.png"
+import echoo from "../images/echoo.png"
+import background from "../videos/background.mp4"
+export {brassynight,electric,symphony,sing,mask,color,echoo,facebook,twitter,link,insta,background}
