@@ -13,7 +13,7 @@ const RecordCards = (props) => {
 						<div className='grid '>
 							<h3 
 								className='text-[16px] text-[#6F6F6F] font-semibold'>
-								Venue
+								venue
 							</h3>
 							<p className='text-[14px] text-[#6F6F6F]'>
 								{props.venue}
@@ -21,15 +21,15 @@ const RecordCards = (props) => {
 						</div>
 						<div>
 							<h3>Friday</h3>
-							<p>{props.date.toLocaleDateString()}</p>
+							<p>{new Date(props.date).toLocaleDateString()}</p>
 						</div>
 						<div>
 							<h3>Time</h3>
-							<p>{props.time.toLocaleTimeString()}</p>
+							<p>{new Date(props.time).toLocaleTimeString()}</p>
 						</div>
 					</div>
 				</div>
-				<div className=''>
+				<div className='text-[16px] text-[#6f6f6f] font-semibold'>
 					<p>Price From</p>
 					<p>{props.price}</p>
 					<button

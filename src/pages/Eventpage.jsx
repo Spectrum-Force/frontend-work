@@ -1,17 +1,34 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import SearchForm from '../components/SearchForm'
 import records from '../components/helpers'
 import RecordCards from '../components/RecordCards'
+import axios from 'axios'
 
 const Eventpage = () => {
-  const recordCards = records.map(element => (
+  // Define a state to store events
+  const [events, setEvents] = useState([]);
+
+  // Define a function to fetch events
+  const getEvents = async () => {
+    const response = await axios.get('https://backend-work-qwbo.onrender.com/events');
+    if (response.status === 200) {
+      setEvents(response.data);
+    } else {
+      setEvents([]);
+    }
+  }
+  
+  // Get events
+  useEffect(() =>{
+    getEvents();
+  }, []);
+
+  const recordCards = events.map(event=> (
     <RecordCards
-      id={element.id}
-      title={element.title}
-      venue={element.venue}
-      date={element.date}
-      time={element.time}
-      price={element.price}
+      id={event.id}
+      title={event.eventName}
+      date={event.date}
+      price={event.price}
     />
   )) 
   return (
