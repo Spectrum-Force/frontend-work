@@ -17,25 +17,25 @@ const Eventpage = () => {
       setEvents([]);
     }
   }
-  
+
   // Get events
-  useEffect(() =>{
+  useEffect(() => {
     getEvents();
   }, []);
 
-  const recordCards = events.map(event=> (
-    <RecordCards
-      key={event.id}
-      title={event.eventName}
-      date={event.date}
-      price={event.price}
-      flyer={`https://savefiles.org/secure/uploads/${event.flyer}?shareable_link=251`}
-    />
-  )) 
+
   return (
-    <div>
+    <div className='pt-10'>
       <SearchForm />
-      {recordCards}
+      {events.map(event => (
+        <RecordCards
+          key={event.id}
+          title={event.eventName}
+          date={event.date}
+          price={event.price}
+          flyer={`https://savefiles.org/secure/uploads/${event.flyer}?shareable_link=251`}
+        />
+      ))}
     </div>
   )
 }

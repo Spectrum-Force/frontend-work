@@ -3,7 +3,7 @@ const K = {
         
         {
             name: "Events",
-            path:"/"
+            path:"/events"
         },
         {
             name: "Search",

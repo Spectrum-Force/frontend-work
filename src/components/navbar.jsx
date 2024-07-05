@@ -6,7 +6,7 @@ import { echoo } from "../assets/images"
 
 const Navbar = () => {
   return (
-<div className="w-full h-20 static bg-gradient-to-r from-orange-500  z-50 left-0 ">
+<div className="w-full h-20 static bg-gradient-to-r from-orange-500 items-center flex z-50 left-0 ">
   <div className="flex justify-center py-10 text-white mx-10 border-b">
     <div className="flex justify-between items-center w-3/4 max-w-screen-lg">
       <span>

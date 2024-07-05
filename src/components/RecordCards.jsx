@@ -2,8 +2,8 @@ import React from 'react'
 
 const RecordCards = (props) => {
   return (
-    <div className='flex items-center pt-10 px-20'>
-      <div className='bg-[#FAFAFA] flex justify-between p-10  w-full'>
+    <div className='flex items-center pt-10 px-20 '>
+      <div className='bg-[#FAFAFA] flex justify-between p-10  w-full shadow-lg'>
 				<div className='w-[70%] space-y-10'>
 					<div>
 						<h2 className='text-[24px] text-[#6F6F6F] font-semibold' >{props.title}</h2>
